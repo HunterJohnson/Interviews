@@ -11,7 +11,7 @@ quick implement - NN, SVM, clustering, boltzmann
 
 algos - complexity cheatsheet
 
-*sort
+*sort - quicksort, timsort
 *merge
 *reverse
 
