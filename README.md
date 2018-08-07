@@ -1,6 +1,7 @@
 # Interviews
 
-http://bigocheatsheet.com/ 
+algos - complexity cheatsheet
+http://bigocheatsheet.com/  - time + space analysis
 
 interview questions &amp; solutions in C++ &amp; Python, mostly from ctci5
 
@@ -12,9 +13,7 @@ queues+stacks+heaps, matrix, graph, trees - BST, AVL, RB, bitwise operators
 
 dijkstras shortest path / minimax + AB pruning / KMP / A* search
 
-quick implement - NN, SVM, clustering, boltzmann
-
-algos - complexity cheatsheet
+quick implement - NN, SGD, SVM, clustering, boltzmann
 
 *sort - quicksort, mergesort, timsort
 
