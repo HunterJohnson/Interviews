@@ -19,5 +19,6 @@ algos - complexity cheatsheet
 *sort - quicksort, mergesort, timsort
 *merge
 *reverse
+*palindromes / size n substr
 
 *dynamic programming
