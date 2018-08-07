@@ -22,6 +22,6 @@ algos - complexity cheatsheet
 
 *reverse
 
-*palindromes / size n substr
-
 *dynamic programming
+
+- palindromes / size n substr / matching 
