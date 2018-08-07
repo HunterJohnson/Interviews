@@ -8,9 +8,9 @@ strings, lists/dicts/arrays/LLs, hash tables (dicts in Python)
 
 queues+stacks+heaps, matrix, graph, trees - BST, AVL, RB, bitwise operators
 
-**rope DS , priority queue
+**rope DS ,  priority queue
 
-dijkstras / minimax + AB pruning / KMP / 
+dijkstras shortest path / minimax + AB pruning / KMP / A* search
 
 quick implement - NN, SVM, clustering, boltzmann
 
@@ -20,4 +20,4 @@ algos - complexity cheatsheet
 *merge
 *reverse
 
-dynamic programming
+*dynamic programming
