@@ -65,4 +65,37 @@ def swap_bits(x,i,j):
     x ^= bit_mask
   return x
 
+
+#reverse bits
+
+# write a program that takes a 64b unsigned int & returns the 64b unsigned int consisting of the bits of the
+# input in reverse order (hint: use lookup table)
+
+def reverse_bits(x):
+  MASK_SIZE = 16
+  BIT_MASK = 0xFFFF
+  return "x"
+  
+# find closest integer w/ same weight
+# "weight" = # of bits set to 1 in binary (eg weight of 92 [1011100] = 4)
+# solution: swap the rightmost consecutive bits that differ
+
+def closest_int_same_bitcount(x): # O(n) time complexity where n is int width
+  NUM_UNSIGNED_BITS = 64
+  for i in range(NUM_UNSIGNED_BITS - 1):
+    if (x >> i) & 1 != (x >> (i + 1)) & 1:
+      x ^= (1 << i) | (1 << (i + 1)) # swaps bit-i & bit-(i+1)
+      return x
+  raise ValueError('All bits are 0 or 1')
+
+
+
+
+
+
+
+
+
+
+
   
