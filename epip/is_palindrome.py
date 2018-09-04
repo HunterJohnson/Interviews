@@ -12,3 +12,4 @@ def is_palindrome_number(x):
   return True
   
 # Time complexity O(n), space O(1)
+# alternate soln: reverse digits in number and see if it changed
