@@ -59,9 +59,9 @@ def parity(x):
 # problem --> Implement code that takes as input a 64bit int & swaps the bits @ indices i & j
 # if bits to be swapped don't differ, the swap doesn't change the value
 
-def swap_bits(x,i,j):
-  if (x >> i) & 1 != (x >> j) & 1:
-    bit_mask = (1 << i) | (1 << j)
+def swap_bits(x,i,j):   # time complexity O(1)
+  if (x >> i) & 1 != (x >> j) & 1:  #ith & j bits differ, so swap by flipping their values
+    bit_mask = (1 << i) | (1 << j)  #since x^1 = 0 when x=1 .... & 1 when x=0 ... we can perform flip XOR
     x ^= bit_mask
   return x
 
@@ -89,13 +89,73 @@ def closest_int_same_bitcount(x): # O(n) time complexity where n is int width
   raise ValueError('All bits are 0 or 1')
 
 
+def multiply(x,y):  # O(n^2) bitwise multiplication
+  def add(a,b):
+    running_sum, carryin, k, temp_a, temp_b = 0, 0, 1, a, b
+    while temp_a or temp_b:
+      ak, bk = a & k, b & k
+      carryout = (ak & bk) | (ak & carryin) | (bk & carryin)
+      running_sum |= ak ^ bk ^ carryin
+      carryin, k, temp_a, temp_b = (carryout << 1, k << 1, temp_a >> 1, temp_b >> 1)
+    return running_sum | carryin
+  
+  running_sum = 0
+  while x:
+    if x & 1:
+      running_sum = add(running_sum, y)
+    x, y = x >> 1, y << 1
+  return running_sum
 
 
+def divide(x,y): # O(n) bitwise division
+  result, power = 0, 32
+  y_power = y << power
+  while x >= y:
+    while y_power > x:
+      y_power >>= 1
+      power -= 1
+    
+    result += 1 << power
+    x -= y_power
+  return result
+
+def power(x, y): # O(n) power, # of multiplications is at most 2x the index of y's MSB
+  result, power = 1.0, y
+  if y < 0:
+    power, x = -power, 1.0 / x
+    while power:
+      if power & 1:
+        result *= x
+      x, power = x * x, power >> 1
+    return result
+  
+ def reverse(x): #reverse an int, O(n) where n is # of digits in k
+  result, x_remaining = 0, abs(x)
+  while x_remaining:
+    result = result * 10 + x_remaining % 10
+    x_remaining //= 10
+    return -result if x < 0 else result
+  
+  
+def is_palindrome_number(x):
+  if x <= 0:
+    return x == 0
+  num_digits = math.floor(math.log10(x)) + 1
+  msd_mask = 10**(num_digits - 1)
+  for i in range(num_digits // 2):
+    if x // msd_mask != x % 10:
+      return False
+    x  %= msd_mask
+    x //= 10
+    msd_mask //= 100
+  return True
 
 
-
-
-
+  
+  
+  
+    
+  
 
 
   
