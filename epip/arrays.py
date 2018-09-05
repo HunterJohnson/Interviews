@@ -25,3 +25,50 @@ other methods; min/max(A) ; bisect.bisect(A,n) ; bisect.bisect_left/right; A.rev
 # check if value present: a in A  .....  O(n) complexity 
 # copy.copy vs copy.deepcopy
 # 
+
+def dutch_flag_partition(pivot_index, A): # O(n^2) time
+  pivot = A[pivot_index]
+  # 1st pass --> group elements smaller than pivot
+  for i in range(len(A)):
+    for j in range(i+1, len(A)):
+      if A[j] < pivot:
+        A[i], A[j] = A[j], A[i]
+        break
+  # 2nd pass --> group elements larger than pivot
+  for i in reversed(range(len(A))):
+    for j in reversed(range(i)):
+      if A[j] > pivot:
+        A[i], A[j] = A[j], A[i]
+        break
+
+def dutch_flag_partition(pivot_index, A): # O(n) time; O(1) space
+  pivot = A[pivot_index]
+  #1st pass : group elements smaller than pivot
+  smaller = 0
+  for i in range(len(A)):
+    if A[i] < pivot:
+      A[i], A[smaller] = A[smaller], A[i]
+      smaller += 1
+  #2nd pass group elements larger than pivot
+  larger = len(A) - 1
+  for i in reversed(range(len(A))):
+    if A[i] > pivot:
+      A[i], A[larger] = A[larger], A[i]
+      larger -= 1
+  
+  
+  # write a program which takes as input an array of digits encoding a non-negative integer
+  # & updates the array to represent the int D+1 eg [1,2,9] --> [1,3,0]
+  
+  def plus_one(A): # time complexity O(n), where n = len(A)
+    A[-1] += 1
+    for i in reversed(range(1, len(A))):
+      if A[i] != 10:
+        break
+      A[i] = 0
+      A[i-1] += 1
+    if A[0] == 10:
+      A[0] = 1
+      A.append(0)
+    return A
+       
