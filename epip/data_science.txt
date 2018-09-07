@@ -91,7 +91,7 @@ are selected randomly (or shuffled) instead of as a single group
 **SGD: logistic regression, SVM, ANN
 
 --------------------------------------------------------------------------
-Hidden Markov Model
+Hidden Markov Model (unsupervised)
 
 Hidden Markov Model (HMM) is a statistical Markov model in which the system
 being modeled is assumed to be a Markov process with unobserved (i.e. hidden) states.
@@ -107,6 +107,22 @@ only parameters, while in the hidden Markov model, the state is not directly
 visible, but the output (in the form of data or "token" in the following),
 dependent on the state, is visible. Each state has a probability distribution
 over the possible output tokens.
+
+---------------------------------------------------------------------
+Bayesian inference is a method of statistical inference in which Bayes' theorem
+is used to update the probability for a hypothesis as more evidence or information becomes available.
+
+- Bayesian analysis is a statistical procedure which endeavors to estimate
+parameters of an underlying distribution based on the observed distribution.
+
+- A Bayesian network, Bayes network, belief network, Bayes(ian) model or
+probabilistic directed acyclic graphical model is a probabilistic 
+graphical model (a type of statistical model) that represents a set 
+of variables and their conditional dependencies via a directed acyclic graph (DAG).
+
+Bayes Rule: P(A|B) = P(B|A) P(A)
+                    --------------
+                        P(B)
 
 -------------------------------------------------
 -------------------------------------------------
