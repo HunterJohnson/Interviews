@@ -20,7 +20,8 @@ over all the example pairs. Minimizing this cost using gradient descent for
 the class of neural networks called multilayer perceptrons (MLP),
 produces the backpropagation algorithm for training neural networks.
 
-Tasks that fall within the paradigm of supervised learning are pattern recognition (also known as classification) and regression (also known as function approximation). 
+Tasks that fall within the paradigm of supervised learning are pattern recognition 
+(also known as classification) and regression (also known as function approximation). 
 --------------------------------------------------------------
 In unsupervised learning, some data x is given and the cost function to be minimized, 
 that can be any function of the data x & the networks output f.
@@ -42,7 +43,8 @@ from signal processing, that is popular for cluster analysis in data mining.
 k-means clustering aims to partition n observations into k clusters in which each 
 observation belongs to the cluster with the nearest mean, serving as a prototype
 of the cluster. This results in a partitioning of the data space into Voronoi cells.
-The problem is computationally difficult (NP-hard); however, there are efficient heuristic algorithms that are commonly employed and converge quickly to a local optimum. 
+The problem is computationally difficult (NP-hard); however, there are efficient
+heuristic algorithms that are commonly employed and converge quickly to a local optimum. 
 
 KNN (supervised) - In pattern recognition, the k-nearest neighbors algorithm (k-NN)
 is a non-parametric method used for classification and regression.[1] In both
@@ -107,8 +109,11 @@ Add regularization (mostly dropout, L1/L2 regularization are also possible)
 ---> L1 regularization (LASSO --> least absolute shrinkage & selection operator) 
 (good for sparse signals, incorporates variable selection w/ many weights going to 0 after regularization)
 
----> L2 regularization (ridge regression)  (good for minimizing prediction error, good for when collinearity exists)
------> In statistics, multicollinearity (also collinearity) is a phenomenon in which one predictor variable in a multiple regression model can be linearly predicted from the others with a substantial degree of accuracy.
+---> L2 regularization (ridge regression) 
+    (good for minimizing prediction error, good for when collinearity exists)
+-----> In statistics, multicollinearity (also collinearity) is a phenomenon in
+which one predictor variable in a multiple regression model can be linearly 
+predicted from the others with a substantial degree of accuracy.
 
  L1-norm does not have an analytical solution, but L2-norm does.
  This allows the L2-norm solutions to be calculated computationally efficiently.
