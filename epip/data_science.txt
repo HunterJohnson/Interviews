@@ -1,12 +1,30 @@
 # Data science stuff to review
 
+Classification (categorical / Discrete)
 
----------------------
-Dimensionality reduction is the process of reducing the number of random variables under consideration, by obtaining a set of principal variables. It can be divided into feature selection and feature extraction.
+Regression (continuous)
+-------------------------------------------------------
+Logistic regression (categorical / discrete)
 
-Dimensionality Reduction is an important factor in predictive modeling. Various proposed methods have introduced different approaches to do so by either graphically or by various other methods like filtering, wrapping or embedding. However, most of these approaches are based on some threshold values and benchmark algorithms that determine the optimality of the features in the dataset.
+Linear regression (continuous)
 
-One motivation for dimensionality reduction is that higher dimensional data sets increase the time complexity and also the space required will be more. Also, all the features in the dataset might not be useful. Some may contribute no information at all, while some may contribute similar information as the other features. Selecting the optimal set of features will help us hence reduce the space and time complexity as well as increase the accuracy or purity of classification (or regression) and clustering (or association) for supervised and unsupervised learning respectively.
+-------------------------------------------------
+Dimensionality reduction is the process of reducing the number of random variables under consideration,
+by obtaining a set of principal variables. It can be divided into feature selection and feature extraction.
+
+Dimensionality Reduction is an important factor in predictive modeling. Various proposed methods
+have introduced different approaches to do so by either graphically or by various other 
+methods like filtering, wrapping or embedding. However, most of these approaches are
+based on some threshold values and benchmark algorithms that determine the optimality
+of the features in the dataset.
+
+One motivation for dimensionality reduction is that higher dimensional data sets increase
+the time complexity and also the space required will be more. Also, all the features
+in the dataset might not be useful. Some may contribute no information at all, while 
+some may contribute similar information as the other features. Selecting the optimal 
+set of features will help us hence reduce the space and time complexity as well as
+increase the accuracy or purity of classification (or regression) and clustering 
+(or association) for supervised and unsupervised learning respectively.
 ---------------------------------------------
 
 Ways to prevent overfitting:
