@@ -1,1 +1,27 @@
 # Data science stuff to review
+
+
+---------------------
+Dimensionality reduction is the process of reducing the number of random variables under consideration, by obtaining a set of principal variables. It can be divided into feature selection and feature extraction.
+
+Dimensionality Reduction is an important factor in predictive modeling. Various proposed methods have introduced different approaches to do so by either graphically or by various other methods like filtering, wrapping or embedding. However, most of these approaches are based on some threshold values and benchmark algorithms that determine the optimality of the features in the dataset.
+
+One motivation for dimensionality reduction is that higher dimensional data sets increase the time complexity and also the space required will be more. Also, all the features in the dataset might not be useful. Some may contribute no information at all, while some may contribute similar information as the other features. Selecting the optimal set of features will help us hence reduce the space and time complexity as well as increase the accuracy or purity of classification (or regression) and clustering (or association) for supervised and unsupervised learning respectively.
+---------------------------------------------
+
+Ways to prevent overfitting:
+
+Cross- Validation: A standard way to find out-of-sample prediction error is to use 5-fold cross validation.
+---> test the model’s ability to predict new data that was not used in estimating it, in order to flag problems like overfitting. and to give an insight on how the model will generalize to an independent dataset (i.e., an unknown dataset, for instance from a real problem. (Split data into train/validate/test)
+Early Stopping: Its rules provide us the guidance as to how many iterations can be run before learner begins to over-fit.
+more data
+Use data augmentation
+weight decay (minimize risk of gradient descent / SGD getting stuck in local optima)
+Use architectures that generalize well, reduce complexity
+Add regularization (mostly dropout, L1/L2 regularization are also possible)
+ ----> 1) to avoid overfitting by not generating high coefficients for predictors that are sparse.
+       2) to stabilize the estimates especially when there's collinearity in the data.  
+---> L1 regularization (LASSO --> least absolute shrinkage & selection operator) (good for sparse signals, incorporates variable selection w/ many weights going to 0 after regularization)
+
+---> L2 regularization (ridge regression)  (good for minimizing prediction error, good for when collinearity exists)
+-----> In statistics, multicollinearity (also collinearity) is a phenomenon in which one predictor variable in a multiple regression model can be linearly predicted from the others with a substantial degree of accuracy.
