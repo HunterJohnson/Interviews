@@ -1,5 +1,6 @@
 # Data science stuff to review
 
+
 Classification (categorical / Discrete)
 
 Regression (continuous)
@@ -7,6 +8,29 @@ Regression (continuous)
 Logistic regression (categorical|discrete output )
 
 Linear regression (continuous output / dependent var)
+-----------------------------------------------------------
+
+Supervised Learning
+
+Supervised learning uses a set of example pairs (x,y) & the aim is to find a fn F : x--> y
+in the allowed class of functions that matches the examples.
+A commonly used cost is the mean-squared error, which tries to minimize
+the average squared error between the network's output, f(x), and the target value y.... 
+over all the example pairs. Minimizing this cost using gradient descent for
+the class of neural networks called multilayer perceptrons (MLP),
+produces the backpropagation algorithm for training neural networks.
+
+Tasks that fall within the paradigm of supervised learning are pattern recognition (also known as classification) and regression (also known as function approximation). 
+--------------------------------------------------------------
+In unsupervised learning, some data x is given and the cost function to be minimized, 
+that can be any function of the data x & the networks output f.
+The cost function is dependent on the task (the model domain) and any a priori
+assumptions (the implicit properties of the model, its parameters and the observed variables).
+Tasks that fall within the paradigm of unsupervised learning are in general 
+estimation problems; the applications include clustering, the estimation
+of statistical distributions, compression and filtering.
+-----------------------------------------------------------
+
 
 ------ MODELS ---------
 SVM (supervised) - A Support Vector Machine (SVM) is a discriminative classifier formally 
@@ -33,7 +57,13 @@ In k-NN regression, the output is the property value for the object.
 This value is the average of the values of its k nearest neighbors.
 ****Sensitive to the local structure of the data
 
-Neural Networks (unsupervised) - 
+Neural Networks
+--->
+An ANN is based on a collection of connected units or nodes called artificial
+neurons which loosely model the neurons in a biological brain. Each connection, 
+like the synapses in a biological brain, can transmit a signal from one
+artificial neuron to another. An artificial neuron that receives a signal
+can process it and then signal additional artificial neurons connected to it.
 
 ----> backpropagation
 
