@@ -48,3 +48,6 @@ Add regularization (mostly dropout, L1/L2 regularization are also possible)
 
 ---> L2 regularization (ridge regression)  (good for minimizing prediction error, good for when collinearity exists)
 -----> In statistics, multicollinearity (also collinearity) is a phenomenon in which one predictor variable in a multiple regression model can be linearly predicted from the others with a substantial degree of accuracy.
+
+ L1-norm does not have an analytical solution, but L2-norm does.
+ This allows the L2-norm solutions to be calculated computationally efficiently.
