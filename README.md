@@ -1,5 +1,7 @@
 # Interviews
 
+python-course.eu // g4g
+
 algos - complexity cheatsheet
 http://bigocheatsheet.com/  - time + space analysis
 
