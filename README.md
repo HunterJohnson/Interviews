@@ -26,3 +26,5 @@ quick implement - NN, SGD, SVM, clustering, boltzmann
 *dynamic programming
 
 - palindromes / size n substr / matching 
+- numpy / pandas methods
+- sklearn
