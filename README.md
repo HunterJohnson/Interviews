@@ -33,4 +33,10 @@ ML --> RNN vs. CNN, math / stat theory
 
 - advanced Python
 
-- quant finance - econometrics / TSA
+- system design questions
+
+- networking / OS questions
+
+- data science questions 
+
+- quant finance - econometrics / TSA / prob
