@@ -43,4 +43,4 @@ ML --> RNN vs. CNN, capsule nets, math / stat theory
 
 - data science questions 
 
-- quant finance - econometrics / TSA / prob
+- quant finance - econometrics / TSA / prob / ARIMA / GARCH
