@@ -9,7 +9,7 @@ interview questions &amp; solutions in C++ &amp; Python, mostly from ctci5
 
 strings, lists/dicts/arrays/LLs, hash tables (dicts in Python)
 
-queues + stacks + heaps, matrix, graphs, trees - BST, AVL, RB, bitwise operators
+queues + stacks + heaps, matrix, graphs, trees - BST, AVL, R-B, bitwise operators
 
 *rope DS ,  priority queue
 
@@ -18,20 +18,22 @@ dijkstras shortest path / minimax + AB pruning / KMP / A* search
 *sort - quicksort, mergesort, timsort / merge / reverse
 
 
-quick implement - NN, SGD, SVM, clustering / KNN, boltzmann, HMM, LSTM
+quick implement - NN, SGD, SVM, lin.reg, clustering / KNN, XGBoost
+                  boltzmann, HMM, LSTM, DT/GBDT, random forest
 
-ML --> RNN vs. CNN, math / stat theory
+ML --> RNN vs. CNN, capsule nets, math / stat theory
 
 *dynamic programming --> memoization / tabulation / top-down v. bottom-up
 - palindromes / size n substr / matching 
 
 - numpy / pandas methods
 - keras / TF
-- sklearn / statsmodels
+- Pytorch / statsmodels
 
-- AWS questions
+- AWS questions --> scaling
 
-- advanced Python
+- advanced Python --> decorators + memoization, lambdas, abstract + metaclasses, networking + I/O
+                      os + system / itertools / multiprocessing + threading + GPUs, HPC w Python
 
 - system design questions
 
