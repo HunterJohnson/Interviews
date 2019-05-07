@@ -29,11 +29,13 @@ ML --> RNN vs. CNN, capsule nets, math / stat theory
 - numpy / pandas methods
 - keras / TF
 - Pytorch / statsmodels
+- visualization - Bokeh + matplotlib + seaborn
 
-- AWS questions --> scaling
+- AWS questions --> Redshift / Snowflake / Databricks
 
 - advanced Python --> decorators + memoization, lambdas, abstract + metaclasses, networking + I/O
                       os + system / itertools / multiprocessing + threading + GPUs, HPC w Python
+                      memory mgmt / OOP / GIL / operator overloading
 
 - system design questions
 
