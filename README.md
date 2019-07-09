@@ -43,4 +43,19 @@ ML --> RNN vs. CNN, capsule nets, math / stat theory
 
 - data science questions 
 
-- quant finance - econometrics / TSA / prob / ARIMA / GARCH
+- quant finance - econometrics
+
+knowing the following list of algorithms and data structures will help at most companies.
+Hash tables
+Linked lists
+Breadth-first search, depth-first search
+Quicksort, merge sort
+Binary search
+2D arrays
+Dynamic arrays
+Binary search trees
+Dynamic programming
+Big-O analysis
+need to understand how a hash table is implemented
+
+econometrics --> / TSA / prob / ARIMA / SARIMAX / GARCH
